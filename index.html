@@ -6,14 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script defer src="app.js"></script>
 </head>
 <body>
     <div class="header">
         
-        <img class="left" src="./img/user-things.jpg">
-        
+        <div id="header-left">
+         <img class="left" src="./img/user-things.jpg">
+         <div id="side">
+            <aside id="sideber">
+                <nav id="global-nav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li class="sub-menu">
+                            <ul class="sub-menu-nav">
+                                <li><a class="hoge" href="#1">閲覧</a></li>
+                                <li><a href="#2">注文</a></li>
+                                <li><a href="#3">配達</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">注文する</a></li>
+                        <li><a href="#">配達する</a></li>
+                    </ul>
+                </nav>
+            </aside>
+          </div> 
+        </div>
 
-        <a class="right" href="https://www.ubereats.com/?_ga=2.211651484.888791413.1579140404-57327786.1579140404" target="blank"><img src="./img/S__18227206.jpg"></a>
+        <a class="right" href="https://www.ubereats.com/?_ga=2.211651484.888791413.1579140404-57327786.1579140404" target="blank"><img class="right-img" src="./img/S__18227206.jpg"></a>
     
     </div>
 
@@ -29,20 +50,20 @@
             <img class="img1" src="./img/delivery_jitensya.png">
         </div>
         <div class="main2">
-            <div>
-             <h5 class="sub">閲覧</h5>
+            <div id="1">
+             <h5 class="sub" >閲覧</h5>
              <p class="sub-text">User&nbsp;thingsには様々な店舗が登録されています。<br>あなたのお気に入りのお店を探してみましょう。<br>見つけた商品はクリックでカートに追加します。</p>
              <img class="img2" src="./img/smartphone_map_app_woman.png">
             </div>
 
-            <div>
-             <h6 class="order-way">注文</h6>
+            <div id="2">
+             <h6 class="order-way" >注文</h6>
              <p class="order-text">お支払いの際は、ご住所、配達予定時間、商品の税込価格、<br>配達料金を合わせた注文価格が表示されます。内容に間違いがなければ｢注文する｣をクリックして完了してください。<br>お支払いは登録されているカードによる自動キャッシュレス決済のため、現金は必要ありません。</p>
              <img class="img3" src="./img/_7253-9.jpg">
             </div>
 
-            <div>
-             <h7 class="delivery">配達</h7>
+            <div id="3">
+             <h7 class="delivery" >配達</h7>
              <p class="delivery-text">User&nbsp;thingsでは他のUserが注文した商品を配達することができます。<br>たくさんの商品を配達し、多くのUserに評価されると様々な特典をゲットできます。<br>好きな場所、好きな時間に、あなたもUser&nbsp;thingsで働いてみませんか？</p>
              <img class="img4" src="./img/c80986dbea55da050527b1cb7fce38c2.jpg">
             </div>
