@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     line-height: 1.5;
 }
@@ -68,14 +69,6 @@ li a:hover{
 }
 
 
-
-
-
-
-
-
-
-
   
 
 
@@ -104,8 +97,6 @@ li a:hover{
 
 
 
-
-
 .right {
     padding-right: 50px;
     position: relative;
@@ -114,6 +105,28 @@ li a:hover{
 }
 .left img {
 height: 20px;
+}
+
+
+    
+.fadeInDown {
+     -webkit-animation-fill-mode:both;
+     -ms-animation-fill-mode:both;
+     animation-fill-mode:both;
+     -webkit-animation-duration:1s;
+     -ms-animation-duration:1s;
+     animation-duration:1s;
+     -webkit-animation-name: fadeInDown;
+     animation-name: fadeInDown;
+     visibility: visible !important;
+}
+@-webkit-keyframes fadeInDown {
+     0% { opacity: 0; -webkit-transform: translateY(-20px); }
+     100% { opacity: 1; -webkit-transform: translateY(0); }
+}
+@keyframes fadeInDown {
+     0% { opacity: 0; -webkit-transform: translateY(-20px); -ms-transform: translateY(-20px); transform: translateY(-20px); }
+     100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
 }
 
 .welcome {
@@ -235,6 +248,23 @@ height: 20px;
     color: white;
 }
 
+#page_top {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+}
+#page_top a {
+    background-color: #999;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px 20px;
+}
+#page_top a:hover {
+    background-color: #666;
+    text-decoration: none;
+}
+
 
 
 @media screen and (max-width: 430px){
@@ -245,6 +275,10 @@ height: 20px;
         font-size: 9px;
         height: 40px;
         
+    }
+
+    ul.dropdwn {
+        width: 170px;
     }
     
     .left {
@@ -394,6 +428,23 @@ height: 20px;
         padding: 30px 80px;
         color: white;
         font-size: 5px;
+    }
+
+    #page_top {
+        position: fixed;
+        bottom: 30px;
+        right: 20px;
+    }
+    #page_top a {
+        background-color: #999;
+        color: #fff;
+        text-align: center;
+        text-decoration: none;
+        padding: 20px 20px;
+    }
+    #page_top a:hover {
+        background-color: #666;
+        text-decoration: none;
     }
 
 }
